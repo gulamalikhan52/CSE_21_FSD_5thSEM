@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bus Booking System</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        width: 600px;
+        margin: 30px auto;
+        background-color: white;
+        padding: 20px;
+        border: 2px solid black;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .heading {
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .section {
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .section h2 {
+        text-align: center;
+        border: 1px solid black;
+        padding: 8px;
+        margin-top: 0;
+      }
+
+      .row {
+        margin: 15px 0;
+      }
+
+      .row label {
+        display: inline-block;
+        width: 160px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      select {
+        width: 220px;
+        padding: 7px;
+      }
+
+      .bus {
+        margin: 15px 0;
+      }
+
+      .bus input {
+        margin-right: 10px;
+      }
+
+      .book {
+        display: block;
+        margin: 25px auto 0;
+        padding: 10px 25px;
+        background-color: #ddd;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .book:hover {
+        background-color: #bbb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="FSD_5th_SEM/bus.jpg"
+        alt="Bus Image"
+        style="display: block; margin: 0 auto; width: 100px; height: auto"
+      />
+      <h1>Bus Booking System</h1>
+
+      <div class="section">
+        <h2>User Information</h2>
+
+        <div class="row">
+          <label>User Name:</label>
+          <input type="text" />
+        </div>
+
+        <div class="row">
+          <label>User Age:</label>
+          <input type="number" />
+        </div>
+
+        <div class="row">
+          <label>User Address No:</label>
+          <input type="text" />
+        </div>
+
+        <div class="row">
+          <label>Select your City:</label>
+
+          <select>
+            <option>Select City</option>
+            <option>Delhi</option>
+            <option>Noida</option>
+            <option>Agra</option>
+            <option>Lucknow</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label>Journey Date:</label>
+          <input type="date" />
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Bus Information</h2>
+
+        <div class="bus">
+          <input type="radio" name="bus" />
+          <label>AC Bus ₹2000</label>
+        </div>
+
+        <div class="bus">
+          <input type="radio" name="bus" />
+          <label>Non AC Bus ₹1500</label>
+        </div>
+
+        <div class="row">
+          <label>Select Your Seat:</label>
+
+          <select>
+            <option>Select Seat</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <button class="book">Book Now</button>
+      </div>
+    </div>
+  </body>
+</html>
